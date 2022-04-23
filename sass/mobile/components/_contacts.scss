@@ -1,0 +1,10 @@
+.footer {
+
+    &__container {
+        @extend %container;
+    }
+
+    &__title {
+        @extend %title;
+    }
+}

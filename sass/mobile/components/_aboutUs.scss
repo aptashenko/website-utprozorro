@@ -1,0 +1,67 @@
+.aboutUs {
+    background-color: $secondary-BackgrColor;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &__container {
+        @extend %container;
+    }
+
+    &__title {
+        position: relative;
+        margin-left: 60px;
+        margin-bottom: 40px;
+        font-size: 18px;
+        font-weight: 600;
+        opacity: 0.7;
+    }
+
+    &__title::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: -59px;
+        width: 40px;
+        height: 5px;
+        background-color: $main-blueColor;
+        transform: translateY(-50%);
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -5px;
+    }
+
+    &__item {
+        width: calc((100% - 2*10px)/2);
+        margin: 5px;
+    }
+
+    &__name {
+        font-size: 36px;
+        font-weight: 900;
+
+        &--colored {
+            color: $main-blueColor;
+        }
+    }
+
+    &__text {
+        margin-top: 10px;
+        font-size: 16px;
+        opacity: 0.7;
+    }
+
+    &__description {
+        margin-top: 20px;
+
+        &--bold {
+            font-weight: 600;
+        }
+    }
+
+    &__card {
+        display: none;
+    }
+}

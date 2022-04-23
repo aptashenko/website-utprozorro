@@ -1,0 +1,41 @@
+.benefits {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &__container {
+        @extend %container;
+    };
+
+    &__title {
+        @extend %title;
+    }
+
+    &__list {
+        display: inline-flex;
+        flex-wrap: wrap;
+        margin: -5px;
+    }
+
+    &__items {
+        width: 143px;
+        margin: 5px;
+        text-align: center;
+    }
+
+    &__image {
+        display: block;
+        width: 100px;
+        height: 110px;
+        margin: 10px auto;
+    }
+
+    &__name {
+        font-size: 18px;
+    }
+
+    &__text {
+        margin-top: 10px;
+
+        font-size: 14px;
+    }
+}
