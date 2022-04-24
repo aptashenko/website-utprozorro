@@ -276,10 +276,9 @@ ul {
 }
 
 .header__container, .hero__container, .usefulls__container, .services__container, .aboutUs__container, .benefits__container, .footer__container {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 480px) {
@@ -470,11 +469,10 @@ ul {
 .hero__background {
   position: relative;
   margin-top: 30px;
+}
+
+.hero__image {
   width: 100%;
-  height: 500px;
-  background-image: url(../../../images/hummer.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .tetragon {
@@ -498,9 +496,11 @@ ul {
 }
 
 .usefulls {
+  position: relative;
   background-color: #fafafa;
   padding-top: 50px;
   padding-bottom: 50px;
+  z-index: 0;
 }
 
 .usefulls__title {
@@ -528,31 +528,40 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: -5px;
   text-align: center;
 }
 
 .usefulls__item {
-  width: 215px;
+  width: calc(50% - 10px);
   margin: 5px;
 }
 
-.usefulls__image {
+.usefulls__background {
   position: relative;
   margin-top: 30px;
   margin-bottom: 30px;
+  z-index: 1;
+}
+
+.usefulls__image {
+  display: block;
   width: 100%;
-  height: 420px;
-  background-image: url(../../../images/hummer2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .usefulls__text:nth-last-child(n+2) {
   margin-bottom: 20px;
+}
+
+.tetragon__new {
+  width: 25%;
+  height: 25%;
+  background-color: #1550e7;
+  position: absolute;
+  bottom: -5px;
+  left: -5px;
+  z-index: -1;
 }
 
 .services {
@@ -597,8 +606,8 @@ ul {
 .services__item {
   position: relative;
   margin-bottom: 40px;
-  max-width: 250px;
-  max-height: 250px;
+  width: 370px;
+  height: 370px;
   background-color: #1550e7;
 }
 
@@ -606,12 +615,19 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 110px 20px;
-  font-size: 18px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 50%;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 26px;
   font-weight: 600;
   text-decoration: none;
   color: #ffffff;
   text-align: center;
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
 }
 
 .services__text {
@@ -663,9 +679,20 @@ ul {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: -5px;
+  text-align: center;
 }
 
 .aboutUs__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: calc((100% - 2*10px)/2);
   margin: 5px;
 }
@@ -703,24 +730,23 @@ ul {
 }
 
 .benefits__list {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: -5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .benefits__items {
-  width: 143px;
+  width: 100%;
   margin: 5px;
   text-align: center;
 }
 
 .benefits__image {
   display: block;
-  width: 100px;
-  height: 110px;
   margin: 10px auto;
 }
 
@@ -731,5 +757,82 @@ ul {
 .benefits__text {
   margin-top: 10px;
   font-size: 14px;
+}
+
+.footer {
+  background-color: #fafafa;
+}
+
+.footer__contacts {
+  padding-bottom: 30px;
+}
+
+.footer__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__icon {
+  margin-right: 10px;
+}
+
+.footer__items:nth-last-child(n+2) {
+  margin-bottom: 10px;
+}
+
+.footer__link {
+  color: #111111;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.footer__form {
+  padding: 30px;
+  background-color: #ffffff;
+}
+
+.footer__formTitle {
+  margin-bottom: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.footer__input {
+  margin-bottom: 10px;
+  padding-left: 5px;
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.footer__input--tel {
+  padding-left: 35px;
+}
+
+.footer__field--tel {
+  position: relative;
+}
+
+.footer__flag {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.footer__button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 50px;
+  font-weight: 500;
+  background-color: transparent;
+  border: 1px solid black;
 }
 /*# sourceMappingURL=main.css.map */

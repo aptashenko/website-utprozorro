@@ -67,6 +67,7 @@
                 <p class="hero__text">Станьте на крок попереду серед інших!</p>
                 <button class="hero__button">Отримати консультацію</button>
             <div class="hero__background">
+                <img src="./images/hummer.jpg" alt="Молоток" class="hero__image">
                 <div class="tetragon"></div>
             </div>
         </div>
@@ -101,8 +102,9 @@
                     <p class="usefulls__text">Необхідно провести процедуру закупівлі без помилок, згідно законодавства</p>
                 </li>
             </ul>
-            <div class="usefulls__image">
-                <div class="tetragon__left"></div>
+            <div class="usefulls__background">
+                <img src="./images/hummer2.jpg" alt="Молоток" class="usefulls__image">
+                <div class="tetragon__new"></div>
             </div>
             <p class="usefulls__text">Організований тендерний відділ з чітким регламентом роботи, налаштованою взаємодією з
                 іншими відділами компанії,
@@ -214,21 +216,47 @@
         <div class="footer__container">
             <h2 class="footer__title">Контакти</h2>
             <ul class="footer__contacts">
-                <li class="footer__items"><a href="" class="footer__link">38(050) 574-23-62</a></li>
-                <li class="footer__items"><a href="" class="footer__link">client.utprozorro@gmail.com</a></li>
-                <li class="footer__items"><a href="" class="footer__link">@aptashenko</a></li>
-                <li class="footer__items">Графік роботи: Пн-Пт, з 9:00 до 19:00</li>
-                <li class="footer__items"><a href="" class="footer__link">Телеграм канал про тендери в Україні @tender_ukraine</a>
+                <li class="footer__items">
+                    <svg width="30" height="30" class="footer__icon">
+                        <use href="./images/svg/contact_icons.svg#icon-phone"></use>
+                    </svg>
+                    <a href="" class="footer__link">38(050) 574-23-62</a></li>
+                <li class="footer__items">
+                        <svg width="30" height="30" class="footer__icon">
+                            <use href="./images/svg/contact_icons.svg#icon-email"></use>
+                        </svg>
+                    <a href="" class="footer__link">client.utprozorro@gmail.com</a></li>
+                <li class="footer__items">
+                        <svg width="30" height="30" class="footer__icon">
+                            <use href="./images/svg/contact_icons.svg#icon-telegram"></use>
+                        </svg>
+                    <a href="" class="footer__link">@aptashenko</a></li>
+                <li class="footer__items">
+                        <svg width="30" height="30" class="footer__icon">
+                            <use href="./images/svg/contact_icons.svg#icon-schedule"></use>
+                        </svg>
+                    <a class="footer__link">Графік роботи: Пн-Пт, з 9:00 до 19:00</a></li>
+                <li class="footer__items">
+                        <svg width="30" height="30" class="footer__icon">
+                            <use href="./images/svg/contact_icons.svg#icon-telegram"></use>
+                        </svg>
+                    <a href="" class="footer__link">Телеграм канал "Тендери України"</a>
                 </li>
             </ul>
             <form class="footer__form" name="questions">
                 <h2 class="footer__formTitle">Залиште своє запитання</h2>
-                <label class="footer__label"><input class="footer__input" type="text" placeholder="Введіть Ваше ім'я"></label>
-                <label class="footer__label"><input class="footer__input" type="email"
-                        placeholder="Введіть Ваш email (не обов'язково)"></label>
-                <label class="footer__label"><input class="footer__input" type="tel" placeholder="(99) 999-99-99"></label>
-                <label class="footer__label"><input class="footer__input" type="text"
-                        placeholder="Залиште коментар або запитання"></label>
+                <label class="footer__label">
+                    <input class="footer__input" type="text" placeholder="Введіть Ваше ім'я"></label>
+                <label class="footer__label">
+                    <input class="footer__input" type="email" placeholder="Введіть Ваш email (не обов'язково)"></label>
+                <label class="footer__label">
+                    <span class="footer__field--tel">
+                        <img class="footer__flag" src="./images/svg/UkrFlag.svg" alt="Прапор України" width="25" height="15">
+                        <input class="footer__input footer__input--tel" type="tel" placeholder="+380 (99) 999-99-99">
+                    </span>
+                </label>
+                <label class="footer__label">
+                    <input class="footer__input" type="text" placeholder="Залиште коментар або запитання"></label>
                 <button class="footer__button" type="submit">Відправити</button>
             </form>
         </div>

@@ -35,21 +35,25 @@
     &__item {
         position: relative;
         margin-bottom: 40px;
-        max-width: 250px;
-        max-height: 250px;
+        width: 370px;
+        height: 370px;
         background-color: $main-blueColor;
     }
 
     &__link {
         display: flex;
-        padding: 110px 20px;
+        justify-content: center;
+        padding-top: 50%;
+        padding-left: 20px;
+        padding-right: 20px;
 
     
-        font-size: 18px;
+        font-size: 26px;
         font-weight: 600;
         text-decoration: none;
         color: #ffffff;
         text-align: center;
+        transform: translateY(-10%);
     }
 
     &__text {

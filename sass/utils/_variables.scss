@@ -23,10 +23,9 @@ ul {
 }
 
 %container {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
 
     @media screen and (min-width: $mobile) {
         width: 480px;

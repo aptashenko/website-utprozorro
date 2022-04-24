@@ -1,4 +1,5 @@
 .footer {
+    background-color: $secondary-BackgrColor;
 
     &__container {
         @extend %container;
@@ -6,5 +7,28 @@
 
     &__title {
         @extend %title;
+    }
+
+    &__contacts {
+        padding-bottom: 30px;
+    }
+
+    &__items {
+        display: flex;
+        align-items: center;
+    }
+
+    &__icon {
+        margin-right: 10px;
+    }
+
+    &__items:nth-last-child(n+2) {
+        margin-bottom: 10px;
+    }
+
+    &__link {
+        color: $main-blackColor;
+        font-size: 18px;
+        text-decoration: none;
     }
 }

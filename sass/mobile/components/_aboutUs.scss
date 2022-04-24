@@ -31,9 +31,13 @@
         display: flex;
         flex-wrap: wrap;
         margin: -5px;
+        text-align: center;
     }
 
     &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         width: calc((100% - 2*10px)/2);
         margin: 5px;
     }

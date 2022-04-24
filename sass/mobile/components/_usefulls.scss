@@ -1,7 +1,9 @@
 .usefulls {
+    position: relative;
     background-color: $secondary-BackgrColor;
     padding-top: 50px;
     padding-bottom: 50px;
+    z-index: 0;
 
     &__container {
         @extend %container;
@@ -29,29 +31,40 @@
 
     &__list {
         display: flex;
-        width: 100%;
         flex-wrap: wrap;
-        margin: -5px;
         text-align: center;
     }
 
     &__item {
-        width: 215px;
+        width: calc(50% - 10px);
         margin: 5px;
     }
 
-    &__image {
+    &__background {
         position: relative;
         margin-top: 30px;
         margin-bottom: 30px;
+        z-index: 1;
+    }
+
+    &__image {
+        display: block;
         width: 100%;
-        height: 420px;
-        background-image: url(../../../images/hummer2.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
     }
 
     &__text:nth-last-child(n+2) {
         margin-bottom: 20px;
+    }
+}
+
+.tetragon {
+    &__new {
+        width: 25%;
+        height: 25%;
+        background-color: $main-blueColor;
+        position: absolute;
+        bottom: -5px;
+        left: -5px;
+        z-index: -1;
     }
 }

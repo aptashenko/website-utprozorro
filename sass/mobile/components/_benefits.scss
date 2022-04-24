@@ -11,21 +11,18 @@
     }
 
     &__list {
-        display: inline-flex;
-        flex-wrap: wrap;
-        margin: -5px;
+        display: flex;
+        flex-direction: column;
     }
 
     &__items {
-        width: 143px;
+        width: 100%;
         margin: 5px;
         text-align: center;
     }
 
     &__image {
         display: block;
-        width: 100px;
-        height: 110px;
         margin: 10px auto;
     }
 
