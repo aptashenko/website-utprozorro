@@ -1,0 +1,75 @@
+@media screen and (min-width: $desktop) {
+    .aboutUs {
+        position: relative;
+        z-index: 1;
+
+        &__box {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__text {
+            margin: 0;
+            padding: 0 20px;
+        }
+
+        &__description {
+            margin: 0;
+            font-size: 18px;
+            width: 500px;
+        }
+
+        &__description:nth-child(n+2) {
+            margin-top: 10px;
+        }
+
+        &__cardOne {
+            margin-top: 60px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        &__cardItem {
+            width: 440px;
+        }
+
+        &__photoBox {
+            position: relative;
+        }
+
+        &__cardName {
+            font-size: 28px;
+        }
+
+        &__cardPosition {
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
+        &__cardDescript {
+            font-size: 20px;
+        }
+
+        &__cardTwo {
+            margin-top: 60px;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row-reverse;
+        }
+
+        &__sertificatBox {
+            display: inline-block;
+        }
+
+    }
+}
+
+.tetragon__founder {
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    top: -10px;
+    left: -10px;
+    background-color: $main-blueColor;
+    z-index: -1;
+}

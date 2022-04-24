@@ -1,0 +1,47 @@
+@media screen and (min-width: $desktop) {
+    .usefulls {
+        &__title {
+            width: 300px;
+        }
+
+        &__list {
+            justify-content: space-between;
+        }
+
+        &__item {
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            text-align: start;
+            width: calc(33% - 30px);
+            margin: 15px;
+        }
+
+        &__logo {
+            padding-bottom: 20px;
+            width: 60px;
+        }
+
+        &__texts {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin-left: 20px;
+            margin-top: 30px;
+        }
+
+        &__text {
+            padding-right: 200px;
+            font-size: 18px;
+        }
+
+        &__background {
+            margin-bottom: 0;
+        }
+
+        &__desription {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+}

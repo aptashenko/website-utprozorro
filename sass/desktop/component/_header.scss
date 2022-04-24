@@ -1,0 +1,32 @@
+@media screen and (min-width: $desktop) {
+    .mobile-menu {
+        display: none;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .header {
+        padding-top: 10px;
+
+        &__navigation {
+            display: flex;
+        }
+
+        &__leftList {
+            display: flex;
+        }
+
+        &__leftItem:nth-last-child(n+2) {
+            padding-right: 50px;
+        }
+
+        &__leftLink {
+            font-size: 18px;
+            font-weight: 600;
+            color: $main-blackColor;
+            text-decoration: none;
+        }
+    }
+}

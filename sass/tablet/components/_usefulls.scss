@@ -1,0 +1,26 @@
+@media screen and (min-width: $tablet) {
+    .usefulls {
+
+        &__item {
+            display: inline-flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: calc(33% - 10px);
+            align-items: center;
+        }
+
+        &__logo {
+            width: 50px;
+        }
+
+        &__background {
+            margin-left: auto;
+            margin-right: auto;
+            width: 440px;
+        }
+
+        &__image {
+            width: auto;
+        }
+    }
+}

@@ -1,0 +1,8 @@
+@media screen and (min-width: $desktop) {
+    .services {
+        &__list {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+@media screen and (min-width: $tablet) {
+    .footer {
+        &__contacts {
+            display: inline-block;
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}

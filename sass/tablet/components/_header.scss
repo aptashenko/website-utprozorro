@@ -1,0 +1,19 @@
+@media screen and (min-width: $tablet) {
+    .header {
+
+        &__rightList {
+            display: block;
+        }
+
+        &__rightLink {
+            font-size: 14px;
+            font-weight: 500;
+            color: $main-blackColor;
+            text-decoration: none;
+
+            &--smallWeight {
+                font-weight: 300;
+            }
+        }
+    }
+}

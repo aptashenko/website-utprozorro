@@ -1,0 +1,19 @@
+@media screen and (min-width: $tablet) {
+    .benefits {
+        &__list {
+            display: flex;
+            flex-direction: row;
+        }
+
+        &__items {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            width: calc(33% - 10px);
+        }
+
+        &__image {
+            height: 75px;
+        }
+    }
+}

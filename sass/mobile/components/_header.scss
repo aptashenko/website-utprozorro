@@ -1,4 +1,6 @@
 .header {
+    padding-top: 20px;
+
     &__container {
         @extend %container;
         display: flex;
@@ -63,7 +65,7 @@
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
     .header {
         &__navigation, &__rightList {
             display: none;
